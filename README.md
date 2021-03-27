@@ -1,9 +1,10 @@
 # remote-buggy
 
-Remote-Access RC car
+Remote-Access Car
 
 ## Tech Stack
 
 - Go
 - RaspberryPI
 - TCP video streaming (may be liable to change in the future)
+- Javascript
