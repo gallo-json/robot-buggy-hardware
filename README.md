@@ -5,5 +5,5 @@ Remote-Access RC car
 ## Tech Stack
 
 - Go
-- WebRTC
 - RaspberryPI
+- TCP video streaming (may be liable to change in the future)
