@@ -8,3 +8,7 @@ Remote-Access Car
 - RaspberryPI
 - TCP video streaming (may be liable to change in the future)
 - Javascript
+
+## Hardware
+
+[Parts List](parts.md)
