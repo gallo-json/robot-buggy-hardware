@@ -1,8 +1,6 @@
 package hardware
 
 import (
-	"time"
-
 	"github.com/stianeikeland/go-rpio/v4"
 
 	"log"
@@ -35,6 +33,5 @@ func Forward() {
 	for i := 0; i < 5; i++ {
 		clockwiseA.High()
 		clockwiseB.High()
-		time.Sleep(100 * time.Millisecond)
 	}
 }
