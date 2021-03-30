@@ -5,4 +5,8 @@ import (
 )
 
 func main() {
+	hardware.Setup()
+	for {
+		hardware.Forward()
+	}
 }
