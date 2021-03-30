@@ -1,6 +1,8 @@
 package hardware
 
 import (
+	"time"
+
 	"github.com/stianeikeland/go-rpio/v4"
 
 	"log"
@@ -13,6 +15,7 @@ var clockwiseB rpio.Pin
 var counterClockwiseA rpio.Pin
 var counterClockwiseB rpio.Pin
 
+// Setup Configures the analog ports on the RaspberryPI/motor controllers
 func Setup() {
 	err := rpio.Open()
 
@@ -24,5 +27,14 @@ func Setup() {
 	counterClockwiseB = rpio.Pin(5)
 	if err != nil {
 		log.Fatal(err)
+	}
+}
+
+// Forward moves the car forward
+func Forward() {
+	for i := 0; i < 5; i++ {
+		clockwiseA.High()
+		clockwiseB.High()
+		time.Sleep(100 * time.Millisecond)
 	}
 }
