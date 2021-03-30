@@ -6,7 +6,7 @@ Remote Access Car
 
 - Go
 - RaspberryPI
-- HLS
+- RTMP + HLS
 - Javascript
 
 ## Hardware
