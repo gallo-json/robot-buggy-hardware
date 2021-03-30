@@ -14,8 +14,8 @@ Remote Access Car
 | Parts                            |
 | -------------------------------- |
 | Raspberry Pi 4                   |
-| Cardboard Plate                  |
+| Plastic Chasis Frame             |
 | 12V DC Motors                    |
-| 12V H Bridge DC Motor Controller |
+| L298N Motor Controller Module    |
 | Plastic Wheels                   |
-| Raspberry Pi Camera 2.1          |
+| Pi Camera v2.1                   |
