@@ -6,7 +6,7 @@ Remote Access Car
 
 - Go
 - RaspberryPI
-- TCP video streaming (may be liable to changes in the future)
+- HLS
 - Javascript
 
 ## Hardware
