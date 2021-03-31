@@ -1,9 +1,11 @@
 package hardware
 
 import (
-	"github.com/stianeikeland/go-rpio/v4"
-
 	"log"
+	"os"
+	"os/signal"
+
+	"github.com/stianeikeland/go-rpio/v4"
 )
 
 var speedA rpio.Pin
@@ -33,6 +35,14 @@ func Setup() {
 		log.Fatal(err)
 		rpio.Close()
 	}
+
+	c := make(chan os.Signal, 1)
+	signal.Notify(c, os.Interrupt)
+	go func() {
+		<-c
+		rpio.Close()
+		os.Exit(1)
+	}()
 }
 
 // Forward moves the car forward
