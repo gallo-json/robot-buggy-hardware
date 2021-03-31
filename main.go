@@ -6,6 +6,6 @@ import (
 
 func main() {
 	for {
-		hardware.Forward()
+		hardware.Left()
 	}
 }
