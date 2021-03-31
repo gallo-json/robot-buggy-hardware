@@ -2,8 +2,6 @@ package hardware
 
 import (
 	"log"
-	"os"
-	"os/signal"
 
 	"github.com/stianeikeland/go-rpio/v4"
 )
@@ -13,7 +11,7 @@ var clockwiseB rpio.Pin
 var counterClockwiseA rpio.Pin
 var counterClockwiseB rpio.Pin
 
-// Setup Configures the analog ports on the RaspberryPI/motor controllers
+// Setup configures the analog ports on the RaspberryPI/motor controllers
 func Setup() {
 	err := rpio.Open()
 
@@ -31,14 +29,6 @@ func Setup() {
 		log.Fatal(err)
 		rpio.Close()
 	}
-
-	c := make(chan os.Signal, 1)
-	signal.Notify(c, os.Interrupt)
-	go func() {
-		<-c
-		rpio.Close()
-		os.Exit(1)
-	}()
 }
 
 // Forward moves the car forward
