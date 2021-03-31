@@ -6,8 +6,6 @@ import (
 	"log"
 )
 
-var speedA rpio.Pin
-var speedB rpio.Pin
 var clockwiseA rpio.Pin
 var clockwiseB rpio.Pin
 var counterClockwiseA rpio.Pin
@@ -22,8 +20,6 @@ func Setup() {
 	counterClockwiseA = rpio.Pin(13)
 	counterClockwiseB = rpio.Pin(5)
 
-	speedA.Output()
-	speedB.Output()
 	clockwiseA.Output()
 	clockwiseB.Output()
 	counterClockwiseA.Output()
