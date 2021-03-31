@@ -17,15 +17,12 @@ var counterClockwiseB rpio.Pin
 func Setup() {
 	err := rpio.Open()
 
-	speedA = rpio.Pin(26)
-	speedB = rpio.Pin(11)
 	clockwiseA = rpio.Pin(19)
 	clockwiseB = rpio.Pin(6)
 	counterClockwiseA = rpio.Pin(13)
 	counterClockwiseB = rpio.Pin(5)
 
 	speedA.Output()
-	speedB.Output()
 	clockwiseA.Output()
 	clockwiseB.Output()
 	counterClockwiseA.Output()
@@ -33,11 +30,14 @@ func Setup() {
 
 	if err != nil {
 		log.Fatal(err)
+		rpio.Close()
 	}
 }
 
 // Forward moves the car forward
 func Forward() {
 	clockwiseA.High()
+	counterClockwiseA.Low()
 	clockwiseB.High()
+	counterClockwiseB.Low()
 }
