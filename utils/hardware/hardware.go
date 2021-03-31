@@ -39,3 +39,9 @@ func Forward() {
 	clockwiseA.High()
 	clockwiseB.High()
 }
+
+// Backward moves the car backward
+func Backward() {
+	counterClockwiseA.High()
+	counterClockwiseB.High()
+}
