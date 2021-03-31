@@ -23,6 +23,7 @@ func Setup() {
 	counterClockwiseB = rpio.Pin(5)
 
 	speedA.Output()
+	speedB.Output()
 	clockwiseA.Output()
 	clockwiseB.Output()
 	counterClockwiseA.Output()
