@@ -31,26 +31,35 @@ func Setup() {
 	}
 }
 
-// Forward moves the car forward
-func Forward() {
-	clockwiseA.High()
-	clockwiseB.High()
-}
-
 // Backward moves the car backward
 func Backward() {
+	clockwiseA.High()
+	counterClockwiseA.Low()
+	clockwiseB.High()
+	counterClockwiseB.Low()
+}
+
+// Forward moves the car forward
+func Forward() {
+	clockwiseA.Low()
 	counterClockwiseA.High()
+	clockwiseB.Low()
 	counterClockwiseB.High()
 }
 
 // Left moves the car left
 func Left() {
 	clockwiseA.High()
+	counterClockwiseA.Low()
+	clockwiseB.Low()
 	counterClockwiseB.High()
 }
 
 // Right moves the car right
 func Right() {
-	clockwiseB.High()
+
+	clockwiseA.Low()
 	counterClockwiseA.High()
+	clockwiseB.High()
+	counterClockwiseB.Low()
 }

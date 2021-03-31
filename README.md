@@ -11,11 +11,11 @@ Remote Access Car
 
 ## Hardware
 
-| Parts                            |
-| -------------------------------- |
-| Raspberry Pi 4                   |
-| Plastic Chasis Frame             |
-| 12V DC Motors                    |
-| L298N Motor Controller Module    |
-| Plastic Wheels                   |
-| Pi Camera v2.1                   |
+| Parts                                |
+| ------------------------------------ |
+| Raspberry Pi 4                       |
+| Generic Plastic Chasis Frame         |
+| Generic 3-6V DC Motors               |
+| Iduino L298N Motor Controller Module |
+| Generic Plastic Wheels               |    |
+| Pi Camera v2.1                       |
