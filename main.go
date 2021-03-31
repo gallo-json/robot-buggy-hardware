@@ -10,7 +10,6 @@ import (
 )
 
 func main() {
-	hardware.Setup()
 	c := make(chan os.Signal, 1)
 	signal.Notify(c, os.Interrupt, syscall.SIGTERM)
 	go func() {
@@ -18,6 +17,8 @@ func main() {
 		rpio.Close()
 		os.Exit(1)
 	}()
+	hardware.Setup()
+
 	for {
 		hardware.Forward()
 	}
