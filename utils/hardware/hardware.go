@@ -37,7 +37,5 @@ func Setup() {
 // Forward moves the car forward
 func Forward() {
 	clockwiseA.High()
-	counterClockwiseA.Low()
 	clockwiseB.High()
-	counterClockwiseB.Low()
 }
