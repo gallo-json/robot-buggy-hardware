@@ -45,3 +45,15 @@ func Backward() {
 	counterClockwiseA.High()
 	counterClockwiseB.High()
 }
+
+// Left moves the car left
+func Left() {
+	clockwiseA.High()
+	counterClockwiseB.High()
+}
+
+// Right moves the car right
+func Right() {
+	clockwiseB.High()
+	counterClockwiseA.High()
+}
