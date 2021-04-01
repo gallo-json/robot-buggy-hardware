@@ -57,9 +57,16 @@ func Left() {
 
 // Right moves the car right
 func Right() {
-
 	clockwiseA.Low()
 	counterClockwiseA.High()
 	clockwiseB.High()
+	counterClockwiseB.Low()
+}
+
+// Stop stops all the motors
+func Stop() {
+	clockwiseA.Low()
+	counterClockwiseA.Low()
+	clockwiseB.Low()
 	counterClockwiseB.Low()
 }
