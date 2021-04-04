@@ -1,13 +1,10 @@
-# remote-buggy
-
-Remote Access Car
+# Hardware for the buggy robot
 
 ## Tech Stack
 
 - Go
-- RaspberryPI
-- RTMP + HLS
-- Javascript
+- Raspberry Pi GPIO interfacing
+- Pulse Width Modulation
 
 ## Hardware
 
@@ -17,5 +14,5 @@ Remote Access Car
 | Generic Plastic Chasis Frame         |
 | Generic 3-6V DC Motors               |
 | Iduino L298N Motor Controller Module |
-| Generic Plastic Wheels               |    |
+| Generic Plastic Wheels               |    
 | Pi Camera v2.1                       |
