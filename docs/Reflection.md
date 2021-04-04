@@ -17,3 +17,8 @@ Solution: The Pi's ground wire was misplaced. There were two different grounds, 
 I fixed my ground issue, but there was not enough torque to turn the robot. I tried supplying more power from the Pi, but that also did not work.
 
 Solution: I was wiring the thing wrong. Looking at the [Iduino manual](https://cdn.instructables.com/ORIG/FCN/YABW/IHNTEND4/FCNYABWIHNTEND4.pdf) I needed to supply power to both the 5V and VMS input, and disable a jumper. Now the motors turn super well.
+
+## What did I learn?
+
+- Golang GPIO interfacing
+- Improved my hardware troubleshooting skills (always check for common ground)
