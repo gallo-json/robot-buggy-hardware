@@ -28,3 +28,7 @@ The Raspberry Pi sends signals via the GPIO pins to the L298N motor controller. 
 [Gallery](docs/Gallery.md)
 
 To see the robot in action, click here:
+
+## Usage
+
+This hardware code is used here <link>.
