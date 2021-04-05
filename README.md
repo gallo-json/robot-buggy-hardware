@@ -34,4 +34,4 @@ To see the robot in action, click here:
 
 ## Usage
 
-This hardware code in a collaborative project [remote-buggy](https://github.com/DGKSK8LIFE/remote-buggy). DGKSK8LIFE adds the web socket/remote access section. I put aside my part for documentation purposes.
+This hardware code is used in a collaborative project [remote-buggy](https://github.com/DGKSK8LIFE/remote-buggy). DGKSK8LIFE adds the web socket/remote access section. I put aside my hardware part for documentation purposes.
