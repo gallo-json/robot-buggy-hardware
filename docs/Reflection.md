@@ -2,7 +2,7 @@
 
 I already had previous experience building a small Raspberry Pi buggy before (link here). This is different because this buggy has 4 motors instead of 2 and a caster wheel. Also, the Raspberry Pi 4 draws more power (5V 3A) than a Pi 3, and I used the same power source to power both the Pi and the motors.
 
-Overall I think this project went smoothly. This is just the hardware part. The remote part is in <>.
+Overall I think this project went smoothly. This is just the hardware part. The remote part is in [remote-buggy](https://github.com/DGKSK8LIFE/remote-buggy).
 
 ## Problems I faced
 
